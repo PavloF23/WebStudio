@@ -82,7 +82,7 @@
     margin: 0;
     font-size: 20px;
     line-height: 1.1;
-    color: $primary-text-color;
+    color: $primary-titel-color;
     margin-bottom: 12px;
 }
 
@@ -157,7 +157,7 @@ textarea {
     left: -20px;
     width: 16px;
     height: 15px;
-    border: 2px solid $primary-text-color;
+    border: 2px solid $primary-titel-color;
     border-radius: 4px;
     transition: fill 250ms $timing-function,
         background 250ms $timing-function,

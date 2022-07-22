@@ -1,83 +1,57 @@
 body {
     margin: 0;
     background-color: $primary-bg-color;
-    color: $primary-text-color;
+    color: $primary-titel-color;
 
     font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-
-/* section */
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-/* знімає підкреслювання */
 a {
     text-decoration: none;
 }
+.container {
+ padding-left: 15px;
+ padding-right: 15px;
+ margin-left: auto;
+ margin-right: auto;
 
-/* знімае крапочкі на переліку */
+ @media screen and (min-width: 480px) {
+    width: 480px;
+ }
+
+ @media screen and (min-width: 768px) {
+    width: 768px;
+ }
+
+  @media screen and (min-width: 1140px) {
+      width: 1140px;
+  }
+}
 .list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
-
-.subtitel {
-    color: $primary-text-color;
-}
-
-.desc {
-    color: $titel-text-color;
-}
-
-/* контейнер для центрування та обмеження контенту */
-.container {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-// h2
-.subject {
-    margin: 0;
-    margin-bottom: 50px;
-
-    color: $primary-text-color;
-
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
-// button
-
 .button {
-    border: none;
-    border-radius: 4px;
-    padding: 10px 32px;
-
     color: $primary-bg-color;
     background-color: $accent-text-color;
     cursor: pointer;
-
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.06em;
     text-align: center;
-    // transition: box-shadow 250ms $timing-function;
-    
-    //     &:hover,
-    //     &:focus {
-    //         box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.15);
-    //     }
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover-color ;
     }
+}
