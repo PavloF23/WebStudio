@@ -1,0 +1,21 @@
+.client__list {
+    display: flex;
+    gap: $indent-features ;
+}
+
+.client__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $primary-icon-color;
+    border-radius: 4px;
+    fill: $primary-icon-color;
+    transition: fill 250ms $timing-function,
+        border 250ms $timing-function;
+    &:hover,
+    &:focus {
+            fill: $accent-text-color;
+            border: 1px solid $accent-text-color;
+        }
+}
+

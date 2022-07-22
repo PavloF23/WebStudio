@@ -1,0 +1,31 @@
+.top {
+    padding-top: 0;
+}
+.work {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    gap: $indent-features;
+}
+
+.work__item {
+    position: relative;
+}
+
+.work__title {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 27px 0px;
+
+    color: $primary-bg-color;
+    background-color: $bg-work-color;
+        
+    font-size: 14px;
+    line-height: 1.1;
+}

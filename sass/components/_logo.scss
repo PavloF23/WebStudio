@@ -1,0 +1,28 @@
+/* logo */
+.logo {
+    margin-right: 93px;
+
+    color: $logo-text-color;
+
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    transition: text-shadow 250ms $timing-function;
+
+    &--accent {
+        color: $accent-text-color;
+    }
+    &.footer {
+            color: $primary-bg-color;
+        }
+
+    &:hover,
+    &:focus {
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+

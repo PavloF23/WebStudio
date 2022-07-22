@@ -1,0 +1,65 @@
+.section__list {
+    display: flex;
+    margin: 0 auto;
+}
+
+.section__item {
+    flex-basis: calc((100% - $indent-features * ($items-features - 1)) / $items-features);
+    // gap: $indent-features ;
+    
+    &::before {
+            display: block;
+            content: " ";
+            height: 120px;
+            background-color: $bg-card-color;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+        }
+    &:not(:nth-last-child(-n + 1)) {
+             margin-right: $indent-features;
+        }
+}
+
+
+.section__titel {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: $primary-text-color;
+
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.antenna::before {
+    background-image: url(../images/antenna.svg);
+    background-size: 70px;
+}
+
+.clock::before {
+    background-image: url(../images/clock.svg);
+    background-size: 70px;
+}
+
+.diagram::before {
+    background-image: url(../images/diagram.svg);
+    background-size: 70px;
+}
+
+.astronaut::before {
+    background-image: url(../images/astronaut.svg);
+    background-size: 70px;
+}
+
+.section__text {
+    margin: 0 0;
+    color: $titel-text-color;
+
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left; 
+}

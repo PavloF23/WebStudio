@@ -1,0 +1,44 @@
+.socials__list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+        gap: 10px;
+}
+
+.socials__link {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;  
+    cursor: pointer;
+    color: $primary-icon-color;
+    background-color: $primary-bg-color;
+    transition: background-color 250ms $timing-function,
+        color 250ms $timing-function;
+        &:hover,
+        &:focus {
+            border-radius: 50%;
+            color: $primary-bg-color;
+            background-color: $accent-text-color;
+        }
+}
+
+.socials__icon {
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+    position: absolute;
+}
+
+/* socials footer */
+.socials-footer {
+    margin-left: 70px;
+    align-items: baseline;
+}
+.socials-footer__link {
+     background-color: $bg-footer-icon;   
+}

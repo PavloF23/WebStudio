@@ -1,0 +1,75 @@
+.element {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.element__link {
+    display: block;
+    transition: box-shadow 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 0px 6px rgba(0, 0, 0, 0.16),
+            0px 4px 0px 4px rgba(0, 0, 0, 0.06), 0px 1px 0px 1px rgba(0, 0, 0, 0.12);
+        }
+        &:hover .element__text,
+        &:focus .element__text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+.element__item {
+    flex-basis: calc((100% - $indent-projekt * ($items-projekt - 1)) / $items-projekt);
+}
+
+.element__meta {
+    padding: 20px 24px;
+    border-left: 1px solid $bg-group-color;
+    border-bottom: 1px solid $bg-group-color;
+    border-right: 2px solid $bg-group-color;
+}
+
+.element__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.element__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    padding: 63px 24px;
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.6;
+    color: $primary-bg-color;
+    background-color: $projekt-bg-color;
+    opacity: 0;
+
+    transition: opacity 250ms $timing-function,
+        background-color 250ms $timing-function,
+        color 250ms $timing-function, transform 250ms $timing-function;
+}
+.element__heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.element__lead {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
