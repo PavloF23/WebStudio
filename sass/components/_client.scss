@@ -2,11 +2,17 @@
     display: flex;
     flex-wrap: wrap;    
     gap: $indent-features ;
+    flex-basis: calc((100% - $indent-features * ($items-features-tablet - 1)) / $items-features-tablet);
+   
+    @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - $indent-features * ($items-projekt - 1)) / $items-projekt);
+        }
 }
 .client__item {
    max-width: 210px;
    max-height: 92px;
-flex-basis: calc((100% - $indent-features * ($items-features-tablet - 1)) / $items-features-tablet);
+
+
 }
 .client__link {
     display: flex;
