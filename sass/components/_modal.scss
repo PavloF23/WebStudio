@@ -28,14 +28,19 @@
     left: 50%;
     z-index: 1000;
 
-    min-width: 528px;
-    min-height: 581px;
+    // min-width: 528px;
+    // min-height: 581px;
     border-radius: 4px;
 
     background-color: $primary-bg-color;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $timing-function;
+
+    @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 609px;
+        }
 }
 
 .modal__btn {
@@ -71,7 +76,7 @@
 
 /* Form */
 .form {
-    width: 528px;
+    // width: 528px;
 
     margin-right: auto;
     margin-left: auto;
@@ -136,10 +141,10 @@ textarea {
 .comment {
     padding-left: 11px;
 }
-
 .check {
     display: flex;
     align-items: baseline;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -148,6 +153,10 @@ textarea {
     font-size: 14px;
     line-height: 1.7;
     margin-left: 20px;
+    @media screen and (min-width: 480px) {
+            font-size: 12px;
+            line-height: calc(14/12);
+        }
 }
 
 .check__icon {
@@ -162,6 +171,9 @@ textarea {
     transition: fill 250ms $timing-function,
         background 250ms $timing-function,
         border-color 250ms $timing-function;
+        @media screen and (min-width: 480px) {
+                top: 0;
+            }
 }
 
 .check__input {
@@ -201,5 +213,8 @@ textarea {
         &:hover,
         &:focus {
             box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.15);
+        }
+        @media screen and (min-width: 480px) {
+           width: 250px;
         }
     }
