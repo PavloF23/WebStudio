@@ -38,6 +38,9 @@
 .socials-footer {
     margin-left: 70px;
     align-items: baseline;
+    @media screen and (min-width: 480px) {
+        margin: 60px 0;
+    }
 }
 .socials-footer__link {
      background-color: $bg-footer-icon;   

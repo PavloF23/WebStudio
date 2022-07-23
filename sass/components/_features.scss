@@ -44,7 +44,10 @@
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: left;
+    // text-align: left;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .antenna::before {
