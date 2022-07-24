@@ -1,4 +1,5 @@
 .page-header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,4 +7,38 @@
     @media screen and (min-width: 768px) {
             height: 80px;
         }
+}
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent ;
+
+    & .icon-close {
+        display: none;
+    }
+    
+    &.is-open .icon-close {
+        display: block;
+    }
+
+    &.is-open .icon-menu {
+        display: none;
+    }
+}
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+     
+    background-color: $primary-bg-color;
+    padding: 20px;
+    text-align: center;
+
+    &.is-open {
+        display: block;
+    }
 }

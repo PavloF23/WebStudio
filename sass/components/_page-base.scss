@@ -7,6 +7,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+
 a {
     text-decoration: none;
 }
@@ -40,18 +41,15 @@ a {
 }
 .titel {
     color: $primary-titel-color;
-    
     font-weight: 700;
-    
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0;
-    
-    @media screen and (max-width: 767px) {
-        font-size: 28px;
-        line-height: calc(33/26);
-        margin-bottom: 30px;
-        }
+    font-size: 28px;
+    line-height: calc(33/26);
+    margin-bottom: 30px;
+//         @media screen and (max-width: 767px) {
+//         }
 }
 .button {
     color: $primary-bg-color;

@@ -1,0 +1,36 @@
+.work {
+    padding-top: 0;
+
+    @media screen and (max-width: 1140px) {
+        display: none;
+    }
+}
+.work__list {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent-features;
+    flex-basis: calc((100% - $indent-features * ($items-projekt - 1)) / $items-projekt);
+    }
+
+.work__item {
+    position: relative;
+}
+
+.work__title {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 27px 0px;
+
+    color: $primary-bg-color;
+    background-color: $bg-work-color;
+        
+    font-size: 14px;
+    line-height: 1.1;
+}
