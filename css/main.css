@@ -104,6 +104,20 @@ footer {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer {
   text-align: center;
 }
@@ -141,17 +155,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (min-width: 480px) {
-  .subscription__field {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .send__input {
@@ -165,18 +175,19 @@ footer {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .send__input {
+    width: 300px;
+  }
 }
 .subscription-label:focus-within > .send__input {
   -webkit-box-shadow: 0 4px 0 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 0 4px rgba(0, 0, 0, 0.15);
-}
-@media screen and (min-width: 480px) {
-  .send__input {
-    margin-bottom: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .button__send {
@@ -214,11 +225,7 @@ footer {
 }
 .logo.footer {
   color: #ffffff;
-}
-@media screen and (min-width: 480px) {
-  .logo.footer {
-    margin: 0;
-  }
+  margin: 0;
 }
 .logo:hover, .logo:focus {
   text-shadow: 4px 4px rgba(0, 0, 0, 0.15);
@@ -275,11 +282,7 @@ footer {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-@media screen and (min-width: 480px) {
-  .socials-footer {
-    margin: 60px 0;
-  }
+  margin: 60px 0;
 }
 
 .socials-footer__link {

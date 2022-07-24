@@ -18,9 +18,9 @@
 
     &.footer {
         color: $primary-bg-color;
-        @media screen and (min-width: 480px) {
-            margin: 0;
-        }
+        margin: 0;
+        //     @media screen and (min-width: 480px) {
+        // }
     }
 
     &:hover,
