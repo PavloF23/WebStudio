@@ -726,6 +726,12 @@ textarea {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
 }
+@media screen and (max-width: 480px) {
+  .client__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 @media screen and (min-width: 768px) {
   .client__list {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
@@ -736,6 +742,11 @@ textarea {
 .client__item {
   width: 210px;
   height: 92px;
+}
+@media screen and (max-width: 480px) {
+  .client__item {
+    max-width: 130px;
+  }
 }
 
 .client__link {

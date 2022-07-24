@@ -3,6 +3,9 @@
     flex-wrap: wrap;    
     gap: $indent-features ;
     flex-basis: calc((100% - $indent-features * ($items-features-tablet - 1)) / $items-features-tablet);
+    @media screen and (max-width: 480px) {
+        justify-content: space-around;
+    }
    
     @media screen and (min-width: 768px) {
             flex-basis: calc((100% - $indent-features * ($items-projekt - 1)) / $items-projekt);
@@ -11,6 +14,10 @@
 .client__item {
    width: 210px;
    height: 92px;
+        @media screen and (max-width: 480px) {
+            max-width: 130px;
+            
+        }
 }
 .client__link {
     display: flex;
