@@ -3,42 +3,212 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 60px;
+    height: 60px;
+
     @media screen and (min-width: 768px) {
             height: 80px;
         }
 }
 .menu-button {
+    z-index: 100;
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent ;
 
+    &:hover,
+    &:focus {
+        color: $accent-text-color ;
+    }
+
     & .icon-close {
-        display: none;
+        display: block;
     }
     
     &.is-open .icon-close {
-        display: block;
-    }
-
-    &.is-open .icon-menu {
         display: none;
     }
-}
-.menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-     
-    background-color: $primary-bg-color;
-    padding: 20px;
-    text-align: center;
 
+    & .icon-menu {
+        display: none;
+    }
+    &.is-open .icon-menu {
+        display: block;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;        
+    }
+}
+.menu-container {  
     &.is-open {
         display: block;
     }
+        @media screen and (max-width: 767px) {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 480px;
+            height: 796px;
+            background-color: $primary-bg-color;
+            padding: 20px;
+            text-align: left;
+        }
+         @media screen and (min-width: 768px) {
+             display: block;
+         }
+}
+
+.nav {
+    @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-left: 40px;
+    }
+}
+
+.site-nav {    
+    color: $accent-text-color;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+   
+    @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 50px;
+            position: relative;
+        }
+}
+
+.site-nav__link {
+    display: block;
+    // padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-titel-color;
+    font-size: 40px;
+    line-height: calc(47/40);
+    font-weight: 500;
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color ;
+    }
+}
+
+
+.current {
+    position: relative;
+    color: $accent-text-color;
+    
+    // &::after {
+    //     display: block;
+
+    //     position: absolute;
+    //     content: "";
+    //     left: 0;
+    //     bottom: 0;
+
+    //     width: 100%;
+    //     height: 4px;
+    //     border-radius: 2px;
+    //     background-color: $accent-text-color;
+    // }
+}
+
+// .site-nav__link--scale {
+//     position: relative;
+
+//     &::after {
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
+
+//         content: "";
+
+//         display: block;
+//         width: 100%;
+//         height: 4px;
+//         border-radius: 2px;
+//         background-color: $accent-text-color;
+//         transform: scaleX(0);
+//         transition: transform 250ms $timing-function;
+//     }
+
+//     &:hover::after {
+//         transform: scaleX(1);
+//     }
+// }
+
+/* haeder-address */
+// .contact {
+//     display: flex;
+//     margin-left: auto;
+//     gap: 50px;
+// }
+
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 270px;
+    padding-left: 40px;
+}
+
+.contact__item {
+    display: flex;
+}
+
+.contact__link {
+    padding-top: 32px;
+    // padding-bottom: 32px;
+    // display: inline-flex;
+    // align-items: center;
+
+    color: $titel-text-color;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-align: left;
+    transition: color 250ms $timing-function,
+        fill 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        fill: $accent-text-color;
+        color: $accent-text-color;
+    }
+}
+
+.contact__icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.tel {
+    font-size: 32px;
+    line-height: calc(40/32);
+    color: $accent-text-color;
+}
+.mail {
+    font-size: 24px;
+        line-height: calc(28/24);
+        color: $titel-text-color;
+}
+
+.header-socials__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.header-socials__link{
+ color: $accent-text-color;
 }
