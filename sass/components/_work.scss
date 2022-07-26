@@ -4,9 +4,12 @@
     @media screen and (max-width: 1140px) {
         display: none;
     }
+          @media screen and (max-width: 1200px) {
+              display: none;
+          }
 }
 .work__list {
-    width: 1170px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -17,6 +20,7 @@
 
 .work__item {
     position: relative;
+    max-width: 370px;
 }
 
 .work__title {
@@ -24,7 +28,7 @@
     margin: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 3px;
     text-align: center;
     padding: 27px 0px;
 
