@@ -45,6 +45,7 @@
         @media screen and (max-width: 767px) {
             display: none;
             position: absolute;
+            z-index: 10;
             top: 0;
             left: 0;
             width: 480px;
@@ -215,7 +216,7 @@
         line-height: calc(14/12);
     }
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
        
