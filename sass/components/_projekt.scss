@@ -8,7 +8,7 @@
 }
 
 .element__link {
-margin-bottom: 30px;
+
 
     display: block;
     transition: box-shadow 250ms $timing-function;
@@ -23,6 +23,9 @@ margin-bottom: 30px;
             opacity: 1;
             transform: translateY(0);
         }
+    @media screen and (max-width: 767px){
+        margin-bottom: 30px;
+    }
 }
 
 .element__item {
@@ -39,6 +42,10 @@ margin-bottom: 30px;
     border-left: 1px solid $bg-group-color;
     border-bottom: 1px solid $bg-group-color;
     border-right: 2px solid $bg-group-color;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        height: 106px; 
+    }
 }
 
 .element__thumb {
