@@ -6,10 +6,10 @@
     flex-basis: calc((100% - $indent-features * ($items-features-tablet - 1)) / $items-features-tablet);
     gap: $indent-features ;
     }
-        // @media screen and (min-width: 768px) {
-        // 
-        // 
-        // }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - $indent-features * ($items-features-dasktop - 1)) / $items-features-dasktop);
+        
+        }
 }
 
 .section__item {    
@@ -32,6 +32,10 @@
         @media screen and (min-width: 768px) {
             width: 354px;
         }    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+                 
 }
 
 
@@ -48,6 +52,9 @@
     @media screen and (max-width: 767px) {
         text-align: center;
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }     
 }
 
 .antenna::before {

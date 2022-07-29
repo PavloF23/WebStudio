@@ -15,7 +15,10 @@
         flex-wrap: wrap;
         flex-basis: calc((100% - $indent-features * ($items-features-tablet - 1)) / $items-features-tablet);
         gap: $indent-features;
-    }    
+    } 
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - $indent-features * ($items-features-dasktop - 1)) / $items-features-dasktop);
+    }
 }
 .card__item {    
     padding: 0;
@@ -27,14 +30,15 @@
         @media screen and (min-width: 768px) {
                 width: 354px;
             }
-             // @media screen and (min-width: 1140px) {
-        //     flex-basis: calc((100% - $indent-features * ($items-features-dasktop - 1)) / $items-features-dasktop);
-        //     }
-            @media screen and (max-width: 767px) {
-                &:not(:nth-last-child(-n + 1)) {
-                    margin-bottom: 30px;
-                }
+    
+        @media screen and (max-width: 767px) {
+            &:not(:nth-last-child(-n + 1)) {
+                margin-bottom: 30px;
             }
+        }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 /* h3 */
 .card__titel {

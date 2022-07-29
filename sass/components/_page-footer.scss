@@ -3,16 +3,23 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .footer-tablet {
     @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
+    @media screen and (min-width: 1200px) {
+        justify-content: left;  
+    }
 }
 .footer {
     // width: 231px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 .footer__item:not(:nth-last-child(-n + 1)) {
     margin-bottom: 8px;
@@ -33,21 +40,33 @@ footer {
 .footer__titel {
     margin: 0;
     margin-bottom: 20px;
-text-align: center;
+    text-align: center;
     color: $primary-bg-color;
 
     font-size: 14px;
     line-height: 1.2;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 // subscription
-// .subscription {
-//     margin-left: auto;
-// }
+
+.subscription {
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+    
+}
 
 .subscription__field {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .send__input {
@@ -56,20 +75,22 @@ text-align: center;
     padding: 11px 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    margin-bottom: 20px;
+    align-items: center;
     background-color: $bg-hero-color;
     transition: box-shadow 250ms $timing-function;
 
     @media screen and (max-width: 480px) {
             width: 300px;    
         }
+    @media screen and (min-width: 1200px) {
+        width: 350px;
+        margin-bottom: 0;
+    }
 
     .subscription-label:focus-within>& {
         box-shadow: 0 4px 0 4px rgba(0, 0, 0, 0.15);
     }
-        //  @media screen and (min-width: 480px) {
-             margin-bottom: 20px;
-             align-items: center;
-        //  }
 }
 
 // button-send 

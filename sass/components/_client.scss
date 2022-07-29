@@ -3,26 +3,28 @@
     flex-wrap: wrap;    
     gap: $indent-features ;
     flex-basis: calc((100% - $indent-features * ($items-features-tablet - 1)) / $items-features-tablet);
+
     @media screen and (max-width: 480px) {
         justify-content: space-around;
     }
    
     @media screen and (min-width: 768px) {
             flex-basis: calc((100% - $indent-features * ($items-projekt - 1)) / $items-projekt);
-        }
+    }
 }
 .client__item {
-   width: 210px;
-   height: 92px;
-        @media screen and (max-width: 480px) {
-            max-width: 130px;
-            
-        }
+    height: 92px;
+    width: 210px;
+
+    // @media screen and (min-width: 768px) {
+    //     width: 210px;
+    // }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 .client__link {
     display: flex;
-    // width: 170px;
-    // height: 92px;
     border: 1px solid $primary-icon-color;
     border-radius: 4px;
     fill: $primary-icon-color;
@@ -32,7 +34,7 @@
     &:focus {
             fill: $accent-text-color;
             border: 1px solid $accent-text-color;
-        }
+        }  
 }
 .client__icon {  
     width: 106px; 
