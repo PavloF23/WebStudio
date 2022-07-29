@@ -4,29 +4,28 @@
     min-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: 
-    linear-gradient(to right,
-        $bg-work-color,
-        $bg-work-color),
-        url("../images/bg-img/hero.jpg");
-        // url("../images/bg-img/hero-480.jpg");
-    background-size: cover;    
-    background-position: center;
-  
     padding: 0;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
     
-
+    background-image: 
+    linear-gradient(to right,
+        $bg-work-color,
+        $bg-work-color),
+        url("../images/bg-img/hero-1600.png");
+    background-size: cover;    
+    background-position: center;
+  
     @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url('../images/bg-img/hero.jpg');
+            background-image: url('../images/bg-img/hero-3200.png');
             }
         }
-
+                  
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
         height: 600px;
