@@ -1369,4 +1369,8 @@ textarea {
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: left;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

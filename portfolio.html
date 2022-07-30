@@ -109,23 +109,45 @@
         <div class="container">
           <ul class="filter list">
             <li class="filter__item">
-              <button type="button" class="btn current-btn">Все</button>
+              <button type="button" class="btn btn-type-all" data-filter="all">
+                Все
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="btn">Веб-сайт</button>
+              <button type="button" class="btn btn-type-web" data-filter="web">
+                Веб-сайт
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="btn">Приложения</button>
+              <button
+                type="button"
+                class="btn btn-type-appendix"
+                data-filter="appendix"
+              >
+                Приложения
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="btn">Дизайн</button>
+              <button
+                type="button"
+                class="btn btn-type-design"
+                data-filter="design"
+              >
+                Дизайн
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="btn">Маркетинг</button>
+              <button
+                type="button"
+                class="btn btn-type-marketing"
+                data-filter="marketing"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="element list">
-            <li class="element__item">
+            <li class="element__item web">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -152,7 +174,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item design">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -181,7 +203,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item appendix">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -208,7 +230,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item marketing">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -235,7 +257,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item appendix">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -262,7 +284,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item web">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -291,7 +313,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item design">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -320,7 +342,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item marketing">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -347,7 +369,7 @@
                 </div>
               </a>
             </li>
-            <li class="element__item">
+            <li class="element__item appendix">
               <a class="element__link" href="">
                 <div class="element__thumb">
                   <img
@@ -466,5 +488,6 @@
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
