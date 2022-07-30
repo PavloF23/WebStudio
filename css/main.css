@@ -791,22 +791,22 @@ footer {
 }
 
 .antenna::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/features/antenna.svg);
   background-size: 70px;
 }
 
 .clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/features/clock.svg);
   background-size: 70px;
 }
 
 .diagram::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(../images/features/diagram.svg);
   background-size: 70px;
 }
 
 .astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(../images/features/astronaut.svg);
   background-size: 70px;
 }
 
@@ -1078,14 +1078,14 @@ textarea {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-img/hero-1600.png");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img/hero-1600.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-img/hero-1600.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img/hero-1600.jpg");
   background-size: cover;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/bg-img/hero-3200.png");
+    background-image: url("../images/bg-img/hero-3200.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
