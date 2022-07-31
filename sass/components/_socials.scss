@@ -39,7 +39,9 @@
     
     align-items: baseline;
     margin: 60px 0;
-
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }    
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
     }

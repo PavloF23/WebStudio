@@ -22,7 +22,11 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-            background-image: url('../images/bg-img/hero-3200.jpg');
+            background-image: 
+            linear-gradient(to right,
+                    $bg-work-color,
+                    $bg-work-color), 
+                    url('../images/bg-img/hero-3200.jpg');
             }
         }
                   
